@@ -654,3 +654,7 @@ footer h1 svg {
     font-weight: 500;
     margin-top: 2.5vw;
 }
+._canvas_container {
+    z-index: 999999 !important;
+    pointer-events: none;
+}
