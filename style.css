@@ -22,7 +22,10 @@ body {
     width: 100%;
 }
 
-
+main {
+    position: relative;
+    background: #111;
+}
 #page1 {
     width: 100%;
     height: 100vh;
@@ -128,4 +131,60 @@ body {
     left:0;
     transform: translate(-50%, -50%);
     opacity: 0;
+}
+
+
+#page2 {
+    width: 100%;
+    min-height: 100vh;
+    background: #111;
+    padding: 5vh 0;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 8vh;
+
+}
+
+#video-container {
+    width: 69vw;
+    height: 70vh;
+    position: relative;
+    left: 28%;
+    background: url('https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg');
+    background-size: cover;
+}
+
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+#video-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#video-crsr {
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+    background: #FFA63D;
+    position: absolute;
+    top: 15%;
+    left: 69.5%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video-crsr i {
+    font-size: 3vw;
 }
